@@ -1,63 +1,135 @@
-<!-- slide: s2-first-rules · indicator 1 · end state -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Little Lemon</title>
-    <meta name="description" content="Middle Eastern food in the Main District.">
-    <meta name="author" content="Lazuardi Al-Muzaki">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <p><a href="index.html">Little Lemon</a></p>
-      <p>Middle Eastern food in the Main District</p>
-    </header>
+body {
+    background-color: #f5f5dc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+}
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Menu</a></li>
-        <li><a href="location.html">Location</a></li>
-        <li><a href="book.html">Book a Table</a></li>
-      </ul>
-    </nav>
+header {
+    background-color: #495e57;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
 
-    <main>
-      <h1>Our Menu</h1>
+header p:first-child {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
 
-      <div>
-        <img src="falafel.jpeg" width="240" height="135" alt="A falafel">
-        <h2>Falafel</h2>
-        <p>Chickpea, herbs, and spices</p>
-        <p>$10</p>
-      </div>
+header a {
+    color: #f4ce14;
+    text-decoration: none;
+}
 
-      <div>
-        <img src="salad.jpeg" width="240" height="135" alt="A pasta salad">
-        <h2>Pasta Salad</h2>
-        <p>Lettuce, vegetables, and mozzarella</p>
-        <p>$12</p>
-      </div>
+header p:last-child {
+    margin: 0;
+    font-size: 18px;
+}
 
-      <h2>Price list</h2>
-      <table>
-        <tr>
-          <th>Dish</th>
-          <th>Price</th>
-        </tr>
-        <tr>
-          <td>Falafel</td>
-          <td>$10</td>
-        </tr>
-        <tr>
-          <td>Pasta Salad</td>
-          <td>$12</td>
-        </tr>
-      </table>
-    </main>
+nav {
+    background-color: #333;
+    padding: 15px;
+}
 
-    <footer>
-      <p>123 Rome Road, Main District, Capital City</p>
-      <p>Open daily, 11:00–22:00 · (021) 555 0123</p>
-    </footer>
-  </body>
-</html>
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f4ce14;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+main > h1 {
+    text-align: center;
+    color: #495e57;
+    margin-bottom: 30px;
+}
+
+main > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 1%;
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main > div img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+main > div h2 {
+    color: #495e57;
+}
+
+main > div p {
+    line-height: 1.5;
+}
+
+main > div p:last-child {
+    color: #ee9972;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main > h2 {
+    text-align: center;
+    color: #495e57;
+    margin-top: 40px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto 40px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #495e57;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+footer {
+    background-color: #495e57;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 8px;
+}
